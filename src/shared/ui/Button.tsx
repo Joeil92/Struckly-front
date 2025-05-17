@@ -1,7 +1,7 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes } from "react";
 
-export const button = cva('px-4 py-3 rounded-md text-[14px] font-semibold', {
+const button = cva('px-4 py-3 rounded-md text-[14px] font-semibold', {
     variants: {
         variant: {
             "primary": "bg-primary-500 text-white",
