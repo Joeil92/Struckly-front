@@ -1,3 +1,7 @@
 {
-  "appAbout": "Modifier <code>src/App.tsx</code> et sauvegarder pour tester le HMR"
+  "login": {
+    "title": "Struckly - Se connecter",
+    "loginTitle": "Se connecter",
+    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte."
+  }
 }

@@ -1,3 +1,7 @@
 {
-  "appAbout": "Edit <code>src/App.tsx</code> and save to test HMR"
+  "login": {
+    "title": "Struckly - Login",
+    "loginTitle": "Login in",
+    "loginSubtitle": "Welcome back! Please log in to your account."
+  }
 }
