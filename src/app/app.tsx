@@ -1,10 +1,10 @@
-import { StrictMode } from "react";
-import { BoostrapedRouter } from "./browser-router";
+import { StrictMode } from 'react'
+import { BoostrapedRouter } from './browser-router'
 
 export default function App() {
-    return (
-        <StrictMode>
-            <BoostrapedRouter />
-        </StrictMode>
-    )
+  return (
+    <StrictMode>
+      <BoostrapedRouter />
+    </StrictMode>
+  )
 }
