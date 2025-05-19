@@ -2,6 +2,12 @@
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
-    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte."
+    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte.",
+    "form": {
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "password-help": "Mot de passe oublié ?",
+      "submit": "Se connecter"
+    }
   }
 }

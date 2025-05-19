@@ -1,21 +1,30 @@
-import { ReactNode } from 'react'
-import { useFormField } from './form-hooks'
+import { cva, VariantProps } from 'class-variance-authority'
 
-export function FormMessage({ children }: { children?: ReactNode }) {
-  const { error, formMessageId } = useFormField()
-  const body = error ? String(error?.message) : children
+const formMessage = cva('text-[10px] leading-[14px] font-medium', {
+  variants: {
+    isError: {
+      false: 'text-grey-500',
+      true: 'text-danger-500',
+    },
+  },
+  defaultVariants: {
+    isError: false,
+  },
+})
 
-  if (!body) {
-    return null
-  }
+export interface FormMessageProps
+  extends React.HTMLAttributes<HTMLParagraphElement>,
+    VariantProps<typeof formMessage> {}
 
+export function FormMessage({
+  children,
+  isError,
+  className,
+  ...props
+}: FormMessageProps) {
   return (
-    <p
-      id={formMessageId}
-      className="text-danger-500 text-[12px] leading-[16px] font-medium"
-      role="alert"
-    >
-      {body}
+    <p className={formMessage({ isError, className })} {...props}>
+      {children}
     </p>
   )
 }

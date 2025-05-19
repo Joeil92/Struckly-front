@@ -2,6 +2,12 @@
   "login": {
     "title": "Struckly - Login",
     "loginTitle": "Login in",
-    "loginSubtitle": "Welcome back! Please log in to your account."
+    "loginSubtitle": "Welcome back! Please log in to your account.",
+    "form": {
+      "email": "Email",
+      "password": "Password",
+      "password-help": "Forgot your password?",
+      "submit": "Login"
+    }
   }
 }
