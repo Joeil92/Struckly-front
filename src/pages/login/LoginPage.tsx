@@ -1,9 +1,17 @@
 import { useTranslation } from 'react-i18next'
 import { Typography } from '../../shared/ui/typography/Typography'
 import LoginForm from '../../features/session/login/Login'
+import { useAuth } from '../../entities/session/session.lib'
+import { Navigate } from 'react-router'
+import { pathKeys } from '../../shared/consts/router'
 
 export function LoginPage() {
   const { t } = useTranslation()
+  const { isAuthenticated } = useAuth()
+
+  if (isAuthenticated) {
+    return <Navigate to={pathKeys.dashboard} />
+  }
 
   return (
     <>

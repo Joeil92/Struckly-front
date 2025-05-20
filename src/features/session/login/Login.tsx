@@ -7,9 +7,13 @@ import { useTranslation } from 'react-i18next'
 import { Button } from '../../../shared/ui/button'
 import { useLoginMutation } from './login.mutations'
 import { pathKeys } from '../../../shared/consts/router'
+import { useNavigate } from 'react-router'
+import { useAuth } from '../../../entities/session/session.lib'
 
 export default function LoginForm() {
   const { t } = useTranslation()
+  const navigate = useNavigate()
+  const { login } = useAuth()
   const {
     handleSubmit,
     register,
@@ -21,7 +25,11 @@ export default function LoginForm() {
 
   const { isPending, mutate } = useLoginMutation({
     onSuccess(session) {
-      console.log(session)
+      login(session)
+      navigate(pathKeys.dashboard)
+    },
+    onError(error) {
+      console.log(error)
     },
   })
   const canSubmit = [isDirty, isValid, !isPending].every(Boolean)

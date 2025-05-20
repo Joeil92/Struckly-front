@@ -1,6 +1,6 @@
 import api from './api.instance'
-import { loginUserDtoSchema } from './api.schemas'
-import { LoginUserDto } from './api.types'
+import { loginUserDtoSchema, refreshUserDtoSchema } from './api.schemas'
+import { LoginUserDto, RefreshUserDto } from './api.types'
 import { AxiosRequestConfig } from 'axios'
 
 export function loginUser(
@@ -9,4 +9,12 @@ export function loginUser(
 ) {
   const data = loginUserDtoSchema.parse(loginUserDto)
   return api.post('/auth/login', data, config)
+}
+
+export function refreshUser(
+  refreshUserDto: RefreshUserDto,
+  config?: AxiosRequestConfig
+) {
+  const data = refreshUserDtoSchema.parse(refreshUserDto)
+  return api.post('/auth/refresh', data, config)
 }
