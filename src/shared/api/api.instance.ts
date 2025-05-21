@@ -2,7 +2,7 @@ import axios from 'axios'
 import { AUTH_TOKENS_KEY } from '../consts/auth'
 import { ApiDataError } from './api.types'
 
-const api = axios.create({ baseURL: import.meta.env.VITE_URL_API })
+export const api = axios.create({ baseURL: import.meta.env.VITE_URL_API })
 
 // Auth interceptor
 api.interceptors.request.use(
