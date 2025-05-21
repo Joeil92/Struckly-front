@@ -9,11 +9,13 @@ import { useLoginMutation } from './login.mutations'
 import { pathKeys } from '../../../shared/consts/router'
 import { useNavigate } from 'react-router'
 import { useAuth } from '../../../entities/session/session.lib'
+import { useToast } from '../../../shared/lib/toast/use-toast'
 
 export default function LoginForm() {
-  const { t } = useTranslation()
   const navigate = useNavigate()
+  const { t } = useTranslation()
   const { login } = useAuth()
+  const { addToast } = useToast()
   const {
     handleSubmit,
     register,
@@ -29,7 +31,19 @@ export default function LoginForm() {
       navigate(pathKeys.dashboard)
     },
     onError(error) {
-      console.log(error)
+      if (error.statusCode === 401 || error.statusCode === 404) {
+        addToast({
+          title: t('login.form.error.invalid'),
+          content: t('login.form.error.invalid-description'),
+          variant: 'danger',
+        })
+      } else {
+        addToast({
+          title: t('common.error.unknown'),
+          content: t('common.error.unknown-description'),
+          variant: 'danger',
+        })
+      }
     },
   })
   const canSubmit = [isDirty, isValid, !isPending].every(Boolean)

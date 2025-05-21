@@ -7,7 +7,17 @@
       "email": "Email",
       "password": "Password",
       "password-help": "Forgot your password?",
-      "submit": "Login"
+      "submit": "Login",
+      "error": {
+        "invalid": "Invalid email or password",
+        "invalid-description": "Please check your email and password and try again."
+      }
+    }
+  },
+  "common": {
+    "error": {
+      "unknown": "An error occurred",
+      "unknown-description": "Please try again later."
     }
   }
 }

@@ -7,7 +7,17 @@
       "email": "E-mail",
       "password": "Mot de passe",
       "password-help": "Mot de passe oublié ?",
-      "submit": "Se connecter"
+      "submit": "Se connecter",
+      "error": {
+        "invalid": "E-mail ou mot de passe invalide",
+        "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      }
+    }
+  },
+  "common": {
+    "error": {
+      "unknown": "Une erreur est survenue",
+      "unknown-description": "Veuillez réessayer plus tard."
     }
   }
 }
