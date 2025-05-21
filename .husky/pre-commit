@@ -10,7 +10,7 @@ npm run lint
 npm run format
 
 # Run tests
-# npm run test
+npm run test
 
 # If everything passes... Now we can commit
 echo '✅✅ You win this time... I am committing this now. ✅✅'

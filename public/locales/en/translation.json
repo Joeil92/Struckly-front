@@ -1,3 +1,23 @@
 {
-  "appAbout": "Edit <code>src/App.tsx</code> and save to test HMR"
+  "login": {
+    "title": "Struckly - Login",
+    "loginTitle": "Login in",
+    "loginSubtitle": "Welcome back! Please log in to your account.",
+    "form": {
+      "email": "Email",
+      "password": "Password",
+      "password-help": "Forgot your password?",
+      "submit": "Login",
+      "error": {
+        "invalid": "Invalid email or password",
+        "invalid-description": "Please check your email and password and try again."
+      }
+    }
+  },
+  "common": {
+    "error": {
+      "unknown": "An error occurred",
+      "unknown-description": "Please try again later."
+    }
+  }
 }

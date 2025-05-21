@@ -1,3 +1,23 @@
 {
-  "appAbout": "Modifier <code>src/App.tsx</code> et sauvegarder pour tester le HMR"
+  "login": {
+    "title": "Struckly - Se connecter",
+    "loginTitle": "Se connecter",
+    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte.",
+    "form": {
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "password-help": "Mot de passe oublié ?",
+      "submit": "Se connecter",
+      "error": {
+        "invalid": "E-mail ou mot de passe invalide",
+        "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      }
+    }
+  },
+  "common": {
+    "error": {
+      "unknown": "Une erreur est survenue",
+      "unknown-description": "Veuillez réessayer plus tard."
+    }
+  }
 }
