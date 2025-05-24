@@ -34,6 +34,7 @@
     "title": "Struckly - Reset your password",
     "formTitle": "Password",
     "formSubtitle": "Generate a password to access your account.",
+    "back-to-login": "Back to login",
     "form": {
       "submit": "Continue",
       "success": {

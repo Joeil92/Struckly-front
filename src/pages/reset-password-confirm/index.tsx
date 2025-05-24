@@ -1,1 +1,1 @@
-export { ResetPasswordConfirmPage } from './Reset-password-page'
+export { ResetPasswordConfirmPage } from './Reset-password-confirm-page'

@@ -34,6 +34,7 @@
     "title": "Struckly - Réinitialiser votre mot de passe",
     "formTitle": "Mot de passe",
     "formSubtitle": "Générer un mot de passe pour accéder à votre compte.",
+    "back-to-login": "Retour à la connexion",
     "form": {
       "submit": "Continuer",
       "success": {
