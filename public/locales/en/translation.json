@@ -14,6 +14,25 @@
       }
     }
   },
+  "reset-password-confirm": {
+    "title": "Struckly - Reset your password",
+    "formTitle": "Password",
+    "formSubtitle": "Generate a password to access your account.",
+    "form": {
+      "submit": "Continue",
+      "success": {
+        "title": "Password reset",
+        "description": "Your password has been reset successfully."
+      },
+      "errors": {
+        "too-small": "Password must be at least 8 characters long",
+        "token-expired": "Reset password link has expired"
+      },
+      "placeholders": {
+        "password": "••••••••"
+      }
+    }
+  },
   "common": {
     "error": {
       "unknown": "An error occurred",

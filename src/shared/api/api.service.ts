@@ -1,6 +1,14 @@
 import api from './api.instance'
-import { loginUserDtoSchema, refreshUserDtoSchema } from './api.schemas'
-import { LoginUserDto, RefreshUserDto } from './api.types'
+import {
+  loginUserDtoSchema,
+  refreshUserDtoSchema,
+  resetPasswordConfirmDtoSchema,
+} from './api.schemas'
+import {
+  LoginUserDto,
+  RefreshUserDto,
+  ResetPasswordConfirmDto,
+} from './api.types'
 import { AxiosRequestConfig } from 'axios'
 
 export function loginUser(
@@ -17,4 +25,12 @@ export function refreshUser(
 ) {
   const data = refreshUserDtoSchema.parse(refreshUserDto)
   return api.post('/auth/refresh', data, config)
+}
+
+export function resetPasswordConfirm(
+  resetPasswordConfirmDto: ResetPasswordConfirmDto,
+  config?: AxiosRequestConfig
+) {
+  const data = resetPasswordConfirmDtoSchema.parse(resetPasswordConfirmDto)
+  return api.patch('/users/reset-password/confirm', data, config)
 }

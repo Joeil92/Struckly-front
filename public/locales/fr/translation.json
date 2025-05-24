@@ -14,6 +14,25 @@
       }
     }
   },
+  "reset-password-confirm": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "formTitle": "Mot de passe",
+    "formSubtitle": "Générer un mot de passe pour accéder à votre compte.",
+    "form": {
+      "submit": "Continuer",
+      "success": {
+        "title": "Réinitialisation du mot de passe",
+        "description": "Votre mot de passe a été réinitialisé avec succès."
+      },
+      "errors": {
+        "too-small": "Le mot de passe doit comporter au moins 8 caractères",
+        "token-expired": "Le lien de réinitialisation du mot de passe a expiré"
+      },
+      "placeholders": {
+        "password": "••••••••"
+      }
+    }
+  },
   "common": {
     "error": {
       "unknown": "Une erreur est survenue",
