@@ -24,24 +24,7 @@ export function ResetPasswordConfirmPage() {
   return (
     <>
       <title>{t('reset-password.title')}</title>
-      {/* <Typography tag={'h1'} className="fixed ps-[50px] pt-[50px]">
-        Struckly
-      </Typography>
-      <div className="flex h-screen w-full items-center justify-center">
-        <div className="flex grow items-center justify-center">
-          <div className="flex w-[50%] flex-col gap-4">
-            <Typography tag={'h5'}>
-              {t('reset-password-confirm.formTitle')}
-            </Typography>
-            <Typography className="text-grey-500">
-              {t('reset-password-confirm.formSubtitle')}
-            </Typography>
-            <ResetPasswordConfirmForm token={token} userId={userId} />
-          </div>
-        </div>
-        <div className="from-primary-300 via-primary-500 to-primary-600 h-screen grow-4 bg-gradient-to-b"></div>
-      </div> */}
-      <div className="bg-grey-100 flex h-screen flex-col items-center justify-center gap-8">
+      <div className="flex h-screen flex-col items-center justify-center gap-8">
         <Typography tag={'h1'}>{t('appName')}</Typography>
         <Card className="w-[450px]">
           <CardHeader className="text-center">

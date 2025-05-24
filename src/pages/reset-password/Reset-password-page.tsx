@@ -20,7 +20,7 @@ export function ResetPasswordPage() {
   return (
     <>
       <title>{t('reset-password.title')}</title>
-      <div className="bg-grey-100 flex h-screen flex-col items-center justify-center gap-8">
+      <div className="flex h-screen flex-col items-center justify-center gap-8">
         <Typography tag={'h1'}>{t('appName')}</Typography>
         <Card className="w-[450px]">
           <CardHeader className="text-center">
