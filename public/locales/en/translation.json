@@ -3,7 +3,7 @@
   "login": {
     "title": "Struckly - Login",
     "loginTitle": "Login in",
-    "loginSubtitle": "Welcome back! Please log in to your account.",
+    "no-account": "Don't have an account? \n Contact your company.",
     "form": {
       "email": "Email",
       "password": "Password",

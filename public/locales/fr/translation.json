@@ -3,7 +3,7 @@
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
-    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte.",
+    "no-account": "Pas de compte ? \n N’hésitez pas à vous rapprocher de votre entreprise.",
     "form": {
       "email": "E-mail",
       "password": "Mot de passe",
