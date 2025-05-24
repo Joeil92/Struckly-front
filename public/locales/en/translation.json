@@ -1,4 +1,5 @@
 {
+  "appName": "Struckly",
   "login": {
     "title": "Struckly - Login",
     "loginTitle": "Login in",
@@ -11,6 +12,21 @@
       "error": {
         "invalid": "Invalid email or password",
         "invalid-description": "Please check your email and password and try again."
+      }
+    }
+  },
+  "reset-password": {
+    "title": "Struckly - Reset your password",
+    "reset-password-title": "Your email address",
+    "reset-password-subtitle": "Enter your email to reset your password.",
+    "back-to-login": "Back to login",
+    "form": {
+      "submit": "Send",
+      "success": {
+        "text": "If an account exists, a password reset email will be sent."
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
       }
     }
   },

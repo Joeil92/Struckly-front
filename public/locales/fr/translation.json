@@ -1,4 +1,5 @@
 {
+  "appName": "Struckly",
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
@@ -11,6 +12,21 @@
       "error": {
         "invalid": "E-mail ou mot de passe invalide",
         "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      }
+    }
+  },
+  "reset-password": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "reset-password-title": "Votre e-mail",
+    "reset-password-subtitle": "Entrez votre e-mail pour réinitialiser votre mot de passe.",
+    "back-to-login": "Retour à la connexion",
+    "form": {
+      "submit": "Envoyer",
+      "success": {
+        "text": "Si un compte correspondant existe, un e-mail de réinitialisation de mot de passe vous sera envoyé."
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
       }
     }
   },

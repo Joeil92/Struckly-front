@@ -9,6 +9,10 @@ export const refreshUserDtoSchema = z.object({
   refresh_token: z.string(),
 })
 
+export const resetPasswordDtoSchema = z.object({
+  email: z.string().email(),
+})
+
 export const resetPasswordConfirmDtoSchema = z.object({
   token: z.string(),
   userId: z.string().uuid(),

@@ -3,12 +3,14 @@ import { LoginPage } from '../pages/login'
 import { pathKeys } from '../shared/consts/router'
 import { ProtectedPage } from '../pages/protected-route'
 import { ResetPasswordConfirmPage } from '../pages/reset-password-confirm'
+import { ResetPasswordPage } from '../pages/reset-password'
 
 export function BoostrapedRouter() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path={pathKeys.login} element={<LoginPage />} />
+        <Route path={pathKeys.resetPassword} element={<ResetPasswordPage />} />
         <Route
           path={pathKeys.resetPasswordConfirm}
           element={<ResetPasswordConfirmPage />}

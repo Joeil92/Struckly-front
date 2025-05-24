@@ -3,11 +3,13 @@ import {
   loginUserDtoSchema,
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
+  resetPasswordDtoSchema,
 } from './api.schemas'
 import {
   LoginUserDto,
   RefreshUserDto,
   ResetPasswordConfirmDto,
+  ResetPasswordDto,
 } from './api.types'
 import { AxiosRequestConfig } from 'axios'
 
@@ -25,6 +27,14 @@ export function refreshUser(
 ) {
   const data = refreshUserDtoSchema.parse(refreshUserDto)
   return api.post('/auth/refresh', data, config)
+}
+
+export function resetPassword(
+  resetPasswordDto: ResetPasswordDto,
+  config?: AxiosRequestConfig
+) {
+  const data = resetPasswordDtoSchema.parse(resetPasswordDto)
+  return api.post('/users/reset-password', data, config)
 }
 
 export function resetPasswordConfirm(

@@ -17,7 +17,7 @@ export function useResetPasswordConfirmMutation(
   const { mutationKey = [], onMutate, onSuccess, onError, onSettled } = options
 
   return useMutation({
-    mutationKey: ['reset-password', ...mutationKey],
+    mutationKey: ['reset-password-confirm', ...mutationKey],
     mutationFn: async (resetPassword: ResetPasswordConfirm) => {
       const { data } = await resetPasswordConfirm(resetPassword)
       return data
