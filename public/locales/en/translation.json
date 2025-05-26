@@ -1,8 +1,9 @@
 {
+  "appName": "Struckly",
   "login": {
     "title": "Struckly - Login",
     "loginTitle": "Login in",
-    "loginSubtitle": "Welcome back! Please log in to your account.",
+    "no-account": "Don't have an account? \n Contact your company.",
     "form": {
       "email": "Email",
       "password": "Password",
@@ -11,6 +12,41 @@
       "error": {
         "invalid": "Invalid email or password",
         "invalid-description": "Please check your email and password and try again."
+      }
+    }
+  },
+  "reset-password": {
+    "title": "Struckly - Reset your password",
+    "reset-password-title": "Your email address",
+    "reset-password-subtitle": "Enter your email to reset your password.",
+    "back-to-login": "Back to login",
+    "form": {
+      "submit": "Send",
+      "success": {
+        "text": "If an account exists, a password reset email will be sent."
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      }
+    }
+  },
+  "reset-password-confirm": {
+    "title": "Struckly - Reset your password",
+    "formTitle": "Password",
+    "formSubtitle": "Generate a password to access your account.",
+    "back-to-login": "Back to login",
+    "form": {
+      "submit": "Continue",
+      "success": {
+        "title": "Password reset",
+        "description": "Your password has been reset successfully."
+      },
+      "errors": {
+        "too-small": "Password must be at least 8 characters long",
+        "token-expired": "Reset password link has expired"
+      },
+      "placeholders": {
+        "password": "••••••••"
       }
     }
   },

@@ -6,6 +6,10 @@
     font-family: inter;
 }
 
+body {
+    background-color: var(--color-grey-100);
+}
+
 @theme {
     /* Colors */
     --color-*: initial;

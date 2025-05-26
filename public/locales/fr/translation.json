@@ -1,8 +1,9 @@
 {
+  "appName": "Struckly",
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
-    "loginSubtitle": "Bon retour parmis nous! Veuillez vous connecter à votre compte.",
+    "no-account": "Pas de compte ? \n N’hésitez pas à vous rapprocher de votre entreprise.",
     "form": {
       "email": "E-mail",
       "password": "Mot de passe",
@@ -11,6 +12,41 @@
       "error": {
         "invalid": "E-mail ou mot de passe invalide",
         "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      }
+    }
+  },
+  "reset-password": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "reset-password-title": "Votre e-mail",
+    "reset-password-subtitle": "Entrez votre e-mail pour réinitialiser votre mot de passe.",
+    "back-to-login": "Retour à la connexion",
+    "form": {
+      "submit": "Envoyer",
+      "success": {
+        "text": "Si un compte correspondant existe, un e-mail de réinitialisation de mot de passe vous sera envoyé."
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      }
+    }
+  },
+  "reset-password-confirm": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "formTitle": "Mot de passe",
+    "formSubtitle": "Générer un mot de passe pour accéder à votre compte.",
+    "back-to-login": "Retour à la connexion",
+    "form": {
+      "submit": "Continuer",
+      "success": {
+        "title": "Réinitialisation du mot de passe",
+        "description": "Votre mot de passe a été réinitialisé avec succès."
+      },
+      "errors": {
+        "too-small": "Le mot de passe doit comporter au moins 8 caractères",
+        "token-expired": "Le lien de réinitialisation du mot de passe a expiré"
+      },
+      "placeholders": {
+        "password": "••••••••"
       }
     }
   },
