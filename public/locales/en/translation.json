@@ -50,6 +50,9 @@
       }
     }
   },
+  "dashboard": {
+    "title": "Struckly - Dashboard"
+  },
   "common": {
     "error": {
       "unknown": "An error occurred",

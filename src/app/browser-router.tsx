@@ -4,6 +4,7 @@ import { pathKeys } from '../shared/consts/router'
 import { ProtectedPage } from '../pages/protected-route'
 import { ResetPasswordConfirmPage } from '../pages/reset-password-confirm'
 import { ResetPasswordPage } from '../pages/reset-password'
+import { Dashboard } from '../pages/dashboard'
 
 export function BoostrapedRouter() {
   return (
@@ -15,7 +16,9 @@ export function BoostrapedRouter() {
           path={pathKeys.resetPasswordConfirm}
           element={<ResetPasswordConfirmPage />}
         />
-        <Route path={pathKeys.dashboard} element={<ProtectedPage />}></Route>
+        <Route path={pathKeys.dashboard} element={<ProtectedPage />}>
+          <Route path={pathKeys.dashboard} element={<Dashboard />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
