@@ -50,6 +50,9 @@
       }
     }
   },
+  "dashboard": {
+    "title": "Struckly - Tableau de bord"
+  },
   "common": {
     "error": {
       "unknown": "Une erreur est survenue",

@@ -44,3 +44,7 @@ export function resetPasswordConfirm(
   const data = resetPasswordConfirmDtoSchema.parse(resetPasswordConfirmDto)
   return api.patch('/users/reset-password/confirm', data, config)
 }
+
+export function getEntreprisesByMe(config?: AxiosRequestConfig) {
+  return api.get('/entreprises/me', config)
+}
