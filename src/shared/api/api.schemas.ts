@@ -20,3 +20,10 @@ export const resetPasswordConfirmDtoSchema = z.object({
     .string()
     .min(8, { message: 'reset-password-confirm.form.errors.too-small' }),
 })
+
+export const entreprisesByMeSchema = z.object({
+  id: z.number(),
+  name: z.string().min(1),
+  logoUrl: z.string().url().nullable(),
+  membersCount: z.number(),
+})

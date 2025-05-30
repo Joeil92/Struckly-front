@@ -8,11 +8,11 @@ const skeleton = cva('bg-grey-300 animate-pulse', {
       text: 'w-full rounded-sm',
     },
     size: {
-      xs: 'h-1 w-1',
-      sm: 'h-2 w-2',
-      md: 'h-4 w-4',
-      lg: 'h-6 w-6',
-      xl: 'h-8 w-8',
+      xs: 'h-2 w-2',
+      sm: 'h-4 w-4',
+      md: 'h-8 w-8',
+      lg: 'h-10 w-10',
+      xl: 'h-12 w-12',
     },
   },
   defaultVariants: {

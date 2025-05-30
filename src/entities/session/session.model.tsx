@@ -10,7 +10,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [user, setUser] = useState<User | null>(null)
 
-  const login = useCallback(({ access_token, refresh_token }: Tokens) => {
+  const login = useCallback(async ({ access_token, refresh_token }: Tokens) => {
     const decodedUser = jwtDecode<User & { exp: number; iat: number }>(
       access_token
     )
@@ -24,9 +24,12 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
         return logout()
       }
 
-      refreshUser({ refresh_token: refresh_token }).then(({ data }) =>
+      try {
+        const { data } = await refreshUser({ refresh_token: refresh_token })
         login(data)
-      )
+      } catch {
+        return logout()
+      }
     }
 
     localStorage.setItem(
