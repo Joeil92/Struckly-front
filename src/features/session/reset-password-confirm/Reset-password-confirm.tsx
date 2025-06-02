@@ -42,14 +42,14 @@ export function ResetPasswordConfirmForm({
     onError: (error) => {
       if (error.statusCode === 410) {
         addToast({
-          title: t('common.error.unknown'),
+          title: t('common.errors.unknown.title'),
           content: t('reset-password-confirm.form.errors.token-expired'),
           variant: 'danger',
         })
       } else {
         addToast({
-          title: t('common.error.unknown'),
-          content: t('common.error.unknown-description'),
+          title: t('common.errors.unknown.title'),
+          content: t('common.errors.unknown.description'),
           variant: 'danger',
         })
       }

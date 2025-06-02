@@ -3,15 +3,32 @@
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
-    "no-account": "Pas de compte ? \n N’hésitez pas à vous rapprocher de votre entreprise.",
+    "no-account": "Besoin d'un compte? Créez-en un!",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
     "form": {
-      "email": "E-mail",
-      "password": "Mot de passe",
-      "password-help": "Mot de passe oublié ?",
+      "labels": {
+        "email": "E-mail",
+        "password": "Mot de passe"
+      },
+      "helpers": {
+        "password": "Mot de passe oublié ?"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      },
       "submit": "Se connecter",
-      "error": {
-        "invalid": "E-mail ou mot de passe invalide",
-        "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      "errors": {
+        "invalid": {
+          "title": "E-mail ou mot de passe invalide",
+          "description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+        }
       }
     }
   },
@@ -54,9 +71,11 @@
     "title": "Struckly - Tableau de bord"
   },
   "common": {
-    "error": {
-      "unknown": "Une erreur est survenue",
-      "unknown-description": "Veuillez réessayer plus tard."
+    "errors": {
+      "unknown": {
+        "title": "Une erreur est survenue",
+        "description": "Veuillez réessayer plus tard."
+      }
     }
   }
 }

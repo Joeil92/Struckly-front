@@ -11,7 +11,9 @@ describe('LoginForm', () => {
   it('should render login form', () => {
     renderLoginForm()
 
-    expect(screen.getByPlaceholderText('login.form.email')).toBeInTheDocument()
+    expect(
+      screen.getByPlaceholderText('login.form.placeholders.email')
+    ).toBeInTheDocument()
     expect(screen.getByPlaceholderText('••••••')).toBeInTheDocument()
     expect(screen.getByText('login.form.submit')).toBeInTheDocument()
   })
@@ -22,7 +24,7 @@ describe('LoginForm', () => {
     const { type, click } = renderLoginForm()
 
     await type(
-      screen.getByPlaceholderText('login.form.email'),
+      screen.getByPlaceholderText('login.form.placeholders.email'),
       mockLoginUser.email
     )
     await type(screen.getByPlaceholderText('••••••'), mockLoginUser.password)
@@ -38,7 +40,7 @@ describe('LoginForm', () => {
     const { type, click } = renderLoginForm()
 
     await type(
-      screen.getByPlaceholderText('login.form.email'),
+      screen.getByPlaceholderText('login.form.placeholders.email'),
       mockLoginUser.email
     )
     await type(screen.getByPlaceholderText('••••••'), mockLoginUser.password)
@@ -53,7 +55,7 @@ describe('LoginForm', () => {
     const { type, click } = renderLoginForm()
 
     await type(
-      screen.getByPlaceholderText('login.form.email'),
+      screen.getByPlaceholderText('login.form.placeholders.email'),
       mockLoginUser.email
     )
     await type(screen.getByPlaceholderText('••••••'), mockLoginUser.password)
