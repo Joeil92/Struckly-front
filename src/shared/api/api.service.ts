@@ -52,6 +52,6 @@ export function resetPasswordConfirm(
   return api.patch('/users/reset-password/confirm', data, config)
 }
 
-export function getEntreprisesByMe(config?: AxiosRequestConfig) {
-  return api.get('/entreprises/me', config)
+export function getOrganizationByMe(config?: AxiosRequestConfig) {
+  return api.get('/organizations/me', config)
 }

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import {
-  entreprisesByMeSchema,
+  organizationByMeSchema,
   loginUserDtoSchema,
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
@@ -16,7 +16,7 @@ export type ResetPasswordConfirmDto = z.infer<
   typeof resetPasswordConfirmDtoSchema
 >
 
-export type EntreprisesByMe = z.infer<typeof entreprisesByMeSchema>
+export type OrganizationByMe = z.infer<typeof organizationByMeSchema>
 
 export type ApiDataError = {
   statusCode: number
