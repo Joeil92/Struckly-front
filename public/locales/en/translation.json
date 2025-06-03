@@ -32,6 +32,45 @@
       }
     }
   },
+  "sign-up": {
+    "title": "Struckly - Sign up",
+    "signUpTitle": "Sign up",
+    "terms": "By signing up, you agree to our <0>Terms of Use</0> and <1>Privacy Policy</1>.",
+    "links": {
+      "login": "Already have an account? Login."
+    },
+    "form": {
+      "labels": {
+        "email": "Email",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "password": "Password",
+        "confirm-password": "Confirm password",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "••••••••",
+        "confirm-password": "••••••••"
+      },
+      "helpers": {
+        "password": "Password must be at least 8 characters long"
+      },
+      "errors": {
+        "email-already-exists": {
+          "description": "This email is already used"
+        },
+        "passwords-do-not-match": {
+          "description": "Passwords do not match"
+        }
+      },
+      "submit": "Sign up"
+    }
+  },
   "reset-password": {
     "title": "Struckly - Reset your password",
     "reset-password-title": "Your email address",

@@ -32,6 +32,45 @@
       }
     }
   },
+  "sign-up": {
+    "title": "Struckly - Inscription",
+    "signUpTitle": "Inscrivez-vous",
+    "terms": "En vous inscrivant, vous acceptez nos <0>Conditions générales d'utilisation</0> et <1>Politique de confidentialité</1>.",
+    "links": {
+      "login": "Déjà un compte ? Connectez-vous."
+    },
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "password": "Mot de passe",
+        "confirm-password": "Confirmer le mot de passe",
+        "male": "Homme",
+        "female": "Femme",
+        "other": "Autre"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "••••••••",
+        "confirm-password": "••••••••"
+      },
+      "helpers": {
+        "password": "Le mot de passe doit comporter au moins 8 caractères"
+      },
+      "errors": {
+        "email-already-exists": {
+          "description": "Cet e-mail est déjà utilisé"
+        },
+        "passwords-do-not-match": {
+          "description": "Les mots de passe ne correspondent pas"
+        }
+      },
+      "submit": "S'inscrire"
+    }
+  },
   "reset-password": {
     "title": "Struckly - Réinitialiser votre mot de passe",
     "reset-password-title": "Votre e-mail",

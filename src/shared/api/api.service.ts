@@ -4,12 +4,14 @@ import {
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
   resetPasswordDtoSchema,
+  signUpDtoSchema,
 } from './api.schemas'
 import {
   LoginUserDto,
   RefreshUserDto,
   ResetPasswordConfirmDto,
   ResetPasswordDto,
+  SignUpDto,
 } from './api.types'
 import { AxiosRequestConfig } from 'axios'
 
@@ -19,6 +21,11 @@ export function loginUser(
 ) {
   const data = loginUserDtoSchema.parse(loginUserDto)
   return api.post('/auth/login', data, config)
+}
+
+export function signUp(signUpDto: SignUpDto, config?: AxiosRequestConfig) {
+  const data = signUpDtoSchema.parse(signUpDto)
+  return api.post('/users', data, config)
 }
 
 export function refreshUser(

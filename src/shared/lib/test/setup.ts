@@ -51,6 +51,23 @@ vi.mock('react-router', async (importOriginal) => {
   }
 })
 
+// Auth instance mock
+vi.mock('../../../entities/session/session.lib', async (importOriginal) => {
+  // eslint-disable-next-line @typescript-eslint/no-wrapper-object-types
+  const actual = await importOriginal<Object>()
+  return {
+    ...actual,
+    useAuth: () => {
+      return {
+        isAuthenticated: false,
+        user: null,
+        login: vi.fn(),
+        logout: vi.fn(),
+      }
+    },
+  }
+})
+
 afterEach(() => {
   vi.clearAllMocks()
   cleanup()

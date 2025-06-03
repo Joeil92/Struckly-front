@@ -5,6 +5,15 @@ export const loginUserDtoSchema = z.object({
   password: z.string().min(8),
 })
 
+export const signUpDtoSchema = z.object({
+  email: z.string().email(),
+  firstName: z.string().min(1),
+  lastName: z.string().min(1),
+  password: z.string().min(8),
+  gender: z.enum(['male', 'female', 'other']),
+  invitationToken: z.string().optional(),
+})
+
 export const refreshUserDtoSchema = z.object({
   refresh_token: z.string(),
 })

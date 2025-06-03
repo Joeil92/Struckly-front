@@ -5,9 +5,11 @@ import {
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
   resetPasswordDtoSchema,
+  signUpDtoSchema,
 } from './api.schemas'
 
 export type LoginUserDto = z.infer<typeof loginUserDtoSchema>
+export type SignUpDto = z.infer<typeof signUpDtoSchema>
 export type RefreshUserDto = z.infer<typeof refreshUserDtoSchema>
 export type ResetPasswordDto = z.infer<typeof resetPasswordDtoSchema>
 export type ResetPasswordConfirmDto = z.infer<
