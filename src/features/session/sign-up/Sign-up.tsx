@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router'
 import { useAuth } from '../../../entities/session/session.lib'
 import { useToast } from '../../../shared/lib/toast/use-toast'
 import { useForm } from 'react-hook-form'
@@ -20,7 +19,6 @@ export interface SignUpFormProps {
 }
 
 export default function SignUpForm({ invitationToken }: SignUpFormProps) {
-  const navigate = useNavigate()
   const { t } = useTranslation()
   const { login } = useAuth()
   const { addToast } = useToast()
@@ -45,11 +43,6 @@ export default function SignUpForm({ invitationToken }: SignUpFormProps) {
   const { isPending, mutate } = useSignUpMutation({
     onSuccess: (session) => {
       login(session)
-      if (!invitationToken) {
-        navigate(pathKeys.createOrganization)
-      } else {
-        navigate(pathKeys.dashboard)
-      }
     },
     onError: (error) => {
       if (error.statusCode === 409) {

@@ -1,7 +1,7 @@
 import userEvent from '@testing-library/user-event'
-import { describe, expect, it, Mock, vi } from 'vitest'
+import { describe, expect, it, Mock } from 'vitest'
 import { renderWithProviders } from '../../../shared/lib/test/test.lib'
-import { BrowserRouter, useNavigate } from 'react-router'
+import { BrowserRouter } from 'react-router'
 import SignUpForm from './Sign-up'
 import { SignUp } from './sign-up.types'
 import { screen, waitFor } from '@testing-library/dom'
@@ -59,70 +59,6 @@ describe('SignUpForm', () => {
     await click(screen.getByRole('button', { name: 'sign-up.form.submit' }))
 
     await waitFor(() => expect(mockRequest).toHaveBeenCalled())
-  })
-
-  it('should navigate to dashboard when sign up mutation is successful and invitation token', async () => {
-    const navigate = vi.fn()
-    ;(useNavigate as Mock).mockReturnValue(navigate)
-
-    const { type, click } = renderSignUpForm('invitationToken')
-
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.firstName'),
-      mockSignUp.firstName
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.lastName'),
-      mockSignUp.lastName
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.email'),
-      mockSignUp.email
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.password'),
-      mockSignUp.password
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.confirm-password'),
-      mockSignUp.confirmPassword
-    )
-    await click(screen.getAllByRole('radio')[0])
-    await click(screen.getByRole('button', { name: 'sign-up.form.submit' }))
-
-    await waitFor(() => expect(useNavigate).toHaveBeenCalled())
-  })
-
-  it('should navigate to create organization when sign up mutation is successful and no invitation token', async () => {
-    const navigate = vi.fn()
-    ;(useNavigate as Mock).mockReturnValue(navigate)
-
-    const { type, click } = renderSignUpForm()
-
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.firstName'),
-      mockSignUp.firstName
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.lastName'),
-      mockSignUp.lastName
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.email'),
-      mockSignUp.email
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.password'),
-      mockSignUp.password
-    )
-    await type(
-      screen.getByPlaceholderText('sign-up.form.placeholders.confirm-password'),
-      mockSignUp.confirmPassword
-    )
-    await click(screen.getAllByRole('radio')[0])
-    await click(screen.getByRole('button', { name: 'sign-up.form.submit' }))
-
-    await waitFor(() => expect(useNavigate).toHaveBeenCalled())
   })
 
   it('should display error message when sign up failure', async () => {

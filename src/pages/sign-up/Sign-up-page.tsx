@@ -25,7 +25,7 @@ export function SignUpPage() {
       <title>{t('sign-up.title')}</title>
       <div className="flex h-screen flex-col items-center justify-center gap-8">
         <Typography tag={'h1'}>{t('appName')}</Typography>
-        <Card className="md:h-[500px] 2xl:h-[600px]">
+        <Card className="h-[600px]">
           <div className="flex flex-1 items-center justify-start gap-4">
             <div className="bg-grey-100 flex h-full w-[250px] flex-col items-center rounded-sm p-4">
               <Typography tag={'subtitle'} className="mb-4">
@@ -58,7 +58,7 @@ export function SignUpPage() {
                 width={150}
               />
             </div>
-            <div className="flex flex-1 flex-col items-center justify-center gap-8 py-4 md:max-w-[500px] md:px-16 2xl:max-w-[700px] 2xl:px-24">
+            <div className="flex flex-1 flex-col items-center justify-center gap-8 py-4 md:max-w-[600px] md:px-16 2xl:max-w-[700px] 2xl:px-24">
               <Typography tag={'h5'} className="text-center">
                 {t('sign-up.signUpTitle')}
               </Typography>
