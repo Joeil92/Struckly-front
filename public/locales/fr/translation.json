@@ -3,15 +3,102 @@
   "login": {
     "title": "Struckly - Se connecter",
     "loginTitle": "Se connecter",
-    "no-account": "Pas de compte ? \n N’hésitez pas à vous rapprocher de votre entreprise.",
+    "no-account": "Besoin d'un compte? Créez-en un!",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
     "form": {
-      "email": "E-mail",
-      "password": "Mot de passe",
-      "password-help": "Mot de passe oublié ?",
+      "labels": {
+        "email": "E-mail",
+        "password": "Mot de passe"
+      },
+      "helpers": {
+        "password": "Mot de passe oublié ?"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      },
       "submit": "Se connecter",
-      "error": {
-        "invalid": "E-mail ou mot de passe invalide",
-        "invalid-description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+      "errors": {
+        "invalid": {
+          "title": "E-mail ou mot de passe invalide",
+          "description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+        }
+      }
+    }
+  },
+  "sign-up": {
+    "title": "Struckly - Inscription",
+    "signUpTitle": "Inscrivez-vous",
+    "terms": "En vous inscrivant, vous acceptez nos <0>Conditions générales d'utilisation</0> et <1>Politique de confidentialité</1>.",
+    "links": {
+      "login": "Déjà un compte ? Connectez-vous."
+    },
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "password": "Mot de passe",
+        "confirm-password": "Confirmer le mot de passe",
+        "male": "Homme",
+        "female": "Femme",
+        "other": "Autre"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "••••••••",
+        "confirm-password": "••••••••"
+      },
+      "helpers": {
+        "password": "Le mot de passe doit comporter au moins 8 caractères"
+      },
+      "errors": {
+        "email-already-exists": {
+          "description": "Cet e-mail est déjà utilisé"
+        },
+        "passwords-do-not-match": {
+          "description": "Les mots de passe ne correspondent pas"
+        }
+      },
+      "submit": "S'inscrire"
+    }
+  },
+  "create-organization": {
+    "title": "Struckly - Votre organisation",
+    "subtitle": "Votre organisation",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "placeholders": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "submit": "Créer mon organisation",
+      "errors": {
+        "user-already-has-an-organization": {
+          "title": "Vous avez déjà une organisation",
+          "description": "Vous ne pouvez pas créer une organisation si vous avez déjà une organisation."
+        }
       }
     }
   },
@@ -54,9 +141,14 @@
     "title": "Struckly - Tableau de bord"
   },
   "common": {
-    "error": {
-      "unknown": "Une erreur est survenue",
-      "unknown-description": "Veuillez réessayer plus tard."
+    "placeholders": {
+      "no-options": "Aucune option"
+    },
+    "errors": {
+      "unknown": {
+        "title": "Une erreur est survenue",
+        "description": "Veuillez réessayer plus tard."
+      }
     }
   }
 }

@@ -33,14 +33,14 @@ export default function LoginForm() {
     onError(error) {
       if (error.statusCode === 401 || error.statusCode === 404) {
         addToast({
-          title: t('login.form.error.invalid'),
-          content: t('login.form.error.invalid-description'),
+          title: t('login.form.errors.invalid.title'),
+          content: t('login.form.errors.invalid.description'),
           variant: 'danger',
         })
       } else {
         addToast({
-          title: t('common.error.unknown'),
-          content: t('common.error.unknown-description'),
+          title: t('common.errors.unknown.title'),
+          content: t('common.errors.unknown.description'),
           variant: 'danger',
         })
       }
@@ -53,17 +53,22 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onValid)} className="flex flex-col gap-8">
+    <form
+      onSubmit={handleSubmit(onValid)}
+      className="flex w-full flex-col gap-8"
+    >
       <fieldset className="gap-1" disabled={isPending}>
-        <Label isError={!!errors.email}>{t('login.form.email')}</Label>
+        <Label isError={!!errors.email}>{t('login.form.labels.email')}</Label>
         <Input
           isError={!!errors.email}
-          placeholder={t('login.form.email')}
+          placeholder={t('login.form.placeholders.email')}
           {...register('email')}
         />
       </fieldset>
       <fieldset className="gap-1" disabled={isPending}>
-        <Label isError={!!errors.password}>{t('login.form.password')}</Label>
+        <Label isError={!!errors.password}>
+          {t('login.form.labels.password')}
+        </Label>
         <Input
           isError={!!errors.password}
           type="password"
@@ -71,7 +76,9 @@ export default function LoginForm() {
           {...register('password')}
         />
         <FormMessage className="text-primary-500">
-          <a href={pathKeys.resetPassword}>{t('login.form.password-help')}</a>
+          <a href={pathKeys.resetPassword}>
+            {t('login.form.helpers.password')}
+          </a>
         </FormMessage>
       </fieldset>
       <Button type="submit" disabled={!canSubmit}>

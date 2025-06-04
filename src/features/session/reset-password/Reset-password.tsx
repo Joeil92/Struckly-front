@@ -32,8 +32,8 @@ export function ResetPasswordForm({ onSubmit }: ResetPasswordFormProps) {
     },
     onError: () => {
       addToast({
-        title: t('common.error.unknown'),
-        content: t('common.error.unknown-description'),
+        title: t('common.errors.unknown.title'),
+        content: t('common.errors.unknown.description'),
         variant: 'danger',
       })
     },

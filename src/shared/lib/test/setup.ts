@@ -35,7 +35,7 @@ vi.mock('react-i18next', () => ({
     }
   },
   initReactI18next: {
-    typpe: '3rdParty',
+    type: '3rdParty',
     init: () => {},
   },
 }))
@@ -48,6 +48,23 @@ vi.mock('react-router', async (importOriginal) => {
     ...originalModule,
     useNavigate: vi.fn().mockImplementation(originalModule.useNavigate),
     useLocation: vi.fn().mockImplementation(originalModule.useLocation),
+  }
+})
+
+// Auth instance mock
+vi.mock('../../../entities/session/session.lib', async (importOriginal) => {
+  // eslint-disable-next-line @typescript-eslint/no-wrapper-object-types
+  const actual = await importOriginal<Object>()
+  return {
+    ...actual,
+    useAuth: () => {
+      return {
+        isAuthenticated: false,
+        user: null,
+        login: vi.fn(),
+        logout: vi.fn(),
+      }
+    },
   }
 })
 

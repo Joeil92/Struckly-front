@@ -3,15 +3,102 @@
   "login": {
     "title": "Struckly - Login",
     "loginTitle": "Login in",
-    "no-account": "Don't have an account? \n Contact your company.",
+    "no-account": "Need an account? Create one now!",
+    "card-info": {
+      "title": "Boost your company's performance!",
+      "list": {
+        "item-1": "Quotes and invoices in just a few clicks",
+        "item-2": "Managing projects from A to Z",
+        "item-3": "Designed by building professionals"
+      }
+    },
     "form": {
-      "email": "Email",
-      "password": "Password",
-      "password-help": "Forgot your password?",
+      "labels": {
+        "email": "Email",
+        "password": "Password"
+      },
+      "helpers": {
+        "password": "Forgot your password?"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      },
       "submit": "Login",
-      "error": {
-        "invalid": "Invalid email or password",
-        "invalid-description": "Please check your email and password and try again."
+      "errors": {
+        "invalid": {
+          "title": "Invalid email or password",
+          "description": "Please check your email and password and try again."
+        }
+      }
+    }
+  },
+  "sign-up": {
+    "title": "Struckly - Sign up",
+    "signUpTitle": "Sign up",
+    "terms": "By signing up, you agree to our <0>Terms of Use</0> and <1>Privacy Policy</1>.",
+    "links": {
+      "login": "Already have an account? Login."
+    },
+    "form": {
+      "labels": {
+        "email": "Email",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "password": "Password",
+        "confirm-password": "Confirm password",
+        "male": "Male",
+        "female": "Female",
+        "other": "Other"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "••••••••",
+        "confirm-password": "••••••••"
+      },
+      "helpers": {
+        "password": "Password must be at least 8 characters long"
+      },
+      "errors": {
+        "email-already-exists": {
+          "description": "This email is already used"
+        },
+        "passwords-do-not-match": {
+          "description": "Passwords do not match"
+        }
+      },
+      "submit": "Sign up"
+    }
+  },
+  "create-organization": {
+    "title": "Struckly - Your organization",
+    "subtitle": "Your organization",
+    "card-info": {
+      "title": "Boost your company's performance!",
+      "list": {
+        "item-1": "Quotes and invoices in just a few clicks",
+        "item-2": "Managing projects from A to Z",
+        "item-3": "Designed by building professionals"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Organization",
+        "country": "Country",
+        "size": "Organization size"
+      },
+      "placeholders": {
+        "name": "Organization",
+        "country": "Country",
+        "size": "Organization size"
+      },
+      "submit": "Create my organization",
+      "errors": {
+        "user-already-has-an-organization": {
+          "title": "You already have an organization",
+          "description": "You cannot create an organization if you already have an organization."
+        }
       }
     }
   },
@@ -54,9 +141,14 @@
     "title": "Struckly - Dashboard"
   },
   "common": {
-    "error": {
-      "unknown": "An error occurred",
-      "unknown-description": "Please try again later."
+    "placeholders": {
+      "no-options": "No options"
+    },
+    "errors": {
+      "unknown": {
+        "title": "An error occurred",
+        "description": "Please try again later."
+      }
     }
   }
 }

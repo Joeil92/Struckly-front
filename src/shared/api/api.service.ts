@@ -1,15 +1,19 @@
 import api from './api.instance'
 import {
   loginUserDtoSchema,
+  organizationDtoSchema,
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
   resetPasswordDtoSchema,
+  signUpDtoSchema,
 } from './api.schemas'
 import {
   LoginUserDto,
+  OrganizationDto,
   RefreshUserDto,
   ResetPasswordConfirmDto,
   ResetPasswordDto,
+  SignUpDto,
 } from './api.types'
 import { AxiosRequestConfig } from 'axios'
 
@@ -19,6 +23,11 @@ export function loginUser(
 ) {
   const data = loginUserDtoSchema.parse(loginUserDto)
   return api.post('/auth/login', data, config)
+}
+
+export function signUp(signUpDto: SignUpDto, config?: AxiosRequestConfig) {
+  const data = signUpDtoSchema.parse(signUpDto)
+  return api.post('/users', data, config)
 }
 
 export function refreshUser(
@@ -45,6 +54,14 @@ export function resetPasswordConfirm(
   return api.patch('/users/reset-password/confirm', data, config)
 }
 
-export function getEntreprisesByMe(config?: AxiosRequestConfig) {
-  return api.get('/entreprises/me', config)
+export function createOrganization(
+  organizationDto: OrganizationDto,
+  config?: AxiosRequestConfig
+) {
+  const data = organizationDtoSchema.parse(organizationDto)
+  return api.post('/organizations', data, config)
+}
+
+export function getOrganizationByMe(config?: AxiosRequestConfig) {
+  return api.get('/organizations/me', config)
 }

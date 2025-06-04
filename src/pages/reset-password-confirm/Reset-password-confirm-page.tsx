@@ -5,6 +5,7 @@ import { Navigate, useSearchParams } from 'react-router'
 import { pathKeys } from '../../shared/consts/router'
 import { useAuth } from '../../entities/session/session.lib'
 import { Card, CardHeader, CardTitle } from '../../shared/ui/card'
+import { Link } from '../../shared/ui/link/Link'
 
 export function ResetPasswordConfirmPage() {
   const { t } = useTranslation()
@@ -35,9 +36,9 @@ export function ResetPasswordConfirmPage() {
           </Typography>
           <ResetPasswordConfirmForm token={token} userId={userId} />
         </Card>
-        <a href={pathKeys.login} className="text-primary-500">
+        <Link href={pathKeys.login} className="text-center">
           {t('reset-password-confirm.back-to-login')}
-        </a>
+        </Link>
       </div>
     </>
   )

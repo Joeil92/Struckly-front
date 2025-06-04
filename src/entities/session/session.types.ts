@@ -1,6 +1,12 @@
 import { z } from 'zod'
 import { tokensSchema, userSchema } from './session.schemas'
 
+export enum Gender {
+  MALE = 'male',
+  FEMALE = 'female',
+  OTHER = 'other',
+}
+
 export enum Roles {
   USER = 'ROLE_USER',
   ADMIN = 'ROLE_ADMIN',

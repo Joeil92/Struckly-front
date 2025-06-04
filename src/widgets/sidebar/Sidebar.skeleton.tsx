@@ -5,7 +5,7 @@ import { Separator } from '../../shared/ui/separator'
 export function SidebarSkeleton() {
   return (
     <div className="flex w-[280px] flex-col gap-4 bg-white p-4">
-      <SelectEntrepriseSkeleton />
+      <SelectOrganizationSkeleton />
       <Separator />
       <div className="flex flex-1 flex-col gap-4">
         {Array(5)
@@ -19,7 +19,7 @@ export function SidebarSkeleton() {
   )
 }
 
-function SelectEntrepriseSkeleton() {
+function SelectOrganizationSkeleton() {
   return (
     <div className="flex items-center gap-4">
       <Skeleton style={'rectangle'} size={'xl'} />

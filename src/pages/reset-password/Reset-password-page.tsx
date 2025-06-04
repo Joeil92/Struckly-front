@@ -7,6 +7,7 @@ import { Typography } from '../../shared/ui/typography'
 import { ResetPasswordForm } from '../../features/session/reset-password/Reset-password'
 import { useState } from 'react'
 import { CircleCheck } from 'lucide-react'
+import { Link } from '../../shared/ui/link/Link'
 
 export function ResetPasswordPage() {
   const { t } = useTranslation()
@@ -42,9 +43,9 @@ export function ResetPasswordPage() {
             </div>
           )}
         </Card>
-        <a href={pathKeys.login} className="text-primary-500">
+        <Link href={pathKeys.login} className="text-center">
           {t('reset-password.back-to-login')}
-        </a>
+        </Link>
       </div>
     </>
   )
