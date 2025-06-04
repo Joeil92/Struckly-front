@@ -1,11 +1,12 @@
 import { z } from 'zod'
 import {
-  organizationByMeSchema,
+  organizationByMeDtoSchema,
   loginUserDtoSchema,
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
   resetPasswordDtoSchema,
   signUpDtoSchema,
+  organizationDtoSchema,
 } from './api.schemas'
 
 export type LoginUserDto = z.infer<typeof loginUserDtoSchema>
@@ -16,7 +17,8 @@ export type ResetPasswordConfirmDto = z.infer<
   typeof resetPasswordConfirmDtoSchema
 >
 
-export type OrganizationByMe = z.infer<typeof organizationByMeSchema>
+export type OrganizationDto = z.infer<typeof organizationDtoSchema>
+export type OrganizationByMeDto = z.infer<typeof organizationByMeDtoSchema>
 
 export type ApiDataError = {
   statusCode: number

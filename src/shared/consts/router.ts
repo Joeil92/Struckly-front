@@ -1,8 +1,8 @@
 export const pathKeys = {
   dashboard: '/dashboard',
+  createOrganization: '/create-organization',
   login: '/login',
   signUp: '/signup',
-  createOrganization: '/signup/create-organization',
   resetPassword: '/reset-password',
   resetPasswordConfirm: '/reset-password/confirm',
 }

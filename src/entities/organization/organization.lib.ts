@@ -1,9 +1,9 @@
 import { z } from 'zod'
 import { OrganizationByMe } from './organization.types'
-import { organizationByMeSchema } from '../../shared/api/api.schemas'
+import { organizationByMeDtoSchema } from '../../shared/api/api.schemas'
 
 export function transformOrganizationByMeDtoToOrganizationByMe(
-  data: z.infer<typeof organizationByMeSchema> | null
+  data: z.infer<typeof organizationByMeDtoSchema> | null
 ): OrganizationByMe | null {
   if (!data) return null
 

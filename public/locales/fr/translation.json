@@ -71,6 +71,37 @@
       "submit": "S'inscrire"
     }
   },
+  "create-organization": {
+    "title": "Struckly - Votre organisation",
+    "subtitle": "Votre organisation",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "placeholders": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "submit": "Créer mon organisation",
+      "errors": {
+        "user-already-has-an-organization": {
+          "title": "Vous avez déjà une organisation",
+          "description": "Vous ne pouvez pas créer une organisation si vous avez déjà une organisation."
+        }
+      }
+    }
+  },
   "reset-password": {
     "title": "Struckly - Réinitialiser votre mot de passe",
     "reset-password-title": "Votre e-mail",
@@ -110,6 +141,9 @@
     "title": "Struckly - Tableau de bord"
   },
   "common": {
+    "placeholders": {
+      "no-options": "Aucune option"
+    },
     "errors": {
       "unknown": {
         "title": "Une erreur est survenue",

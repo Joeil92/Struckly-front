@@ -1,6 +1,7 @@
 import api from './api.instance'
 import {
   loginUserDtoSchema,
+  organizationDtoSchema,
   refreshUserDtoSchema,
   resetPasswordConfirmDtoSchema,
   resetPasswordDtoSchema,
@@ -8,6 +9,7 @@ import {
 } from './api.schemas'
 import {
   LoginUserDto,
+  OrganizationDto,
   RefreshUserDto,
   ResetPasswordConfirmDto,
   ResetPasswordDto,
@@ -50,6 +52,14 @@ export function resetPasswordConfirm(
 ) {
   const data = resetPasswordConfirmDtoSchema.parse(resetPasswordConfirmDto)
   return api.patch('/users/reset-password/confirm', data, config)
+}
+
+export function createOrganization(
+  organizationDto: OrganizationDto,
+  config?: AxiosRequestConfig
+) {
+  const data = organizationDtoSchema.parse(organizationDto)
+  return api.post('/organizations', data, config)
 }
 
 export function getOrganizationByMe(config?: AxiosRequestConfig) {

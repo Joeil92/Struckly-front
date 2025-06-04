@@ -13,7 +13,7 @@ const label = cva('text-[12px] leading-[16px] font-medium', {
 })
 
 export interface LabelProps
-  extends React.HTMLAttributes<HTMLLabelElement>,
+  extends React.LabelHTMLAttributes<HTMLLabelElement>,
     VariantProps<typeof label> {}
 
 export function Label({ children, isError, className, ...props }: LabelProps) {

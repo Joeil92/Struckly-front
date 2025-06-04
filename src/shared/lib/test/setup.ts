@@ -35,7 +35,7 @@ vi.mock('react-i18next', () => ({
     }
   },
   initReactI18next: {
-    typpe: '3rdParty',
+    type: '3rdParty',
     init: () => {},
   },
 }))

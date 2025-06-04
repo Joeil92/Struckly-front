@@ -71,6 +71,37 @@
       "submit": "Sign up"
     }
   },
+  "create-organization": {
+    "title": "Struckly - Your organization",
+    "subtitle": "Your organization",
+    "card-info": {
+      "title": "Boost your company's performance!",
+      "list": {
+        "item-1": "Quotes and invoices in just a few clicks",
+        "item-2": "Managing projects from A to Z",
+        "item-3": "Designed by building professionals"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Organization",
+        "country": "Country",
+        "size": "Organization size"
+      },
+      "placeholders": {
+        "name": "Organization",
+        "country": "Country",
+        "size": "Organization size"
+      },
+      "submit": "Create my organization",
+      "errors": {
+        "user-already-has-an-organization": {
+          "title": "You already have an organization",
+          "description": "You cannot create an organization if you already have an organization."
+        }
+      }
+    }
+  },
   "reset-password": {
     "title": "Struckly - Reset your password",
     "reset-password-title": "Your email address",
@@ -110,6 +141,9 @@
     "title": "Struckly - Dashboard"
   },
   "common": {
+    "placeholders": {
+      "no-options": "No options"
+    },
     "errors": {
       "unknown": {
         "title": "An error occurred",
