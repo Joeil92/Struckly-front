@@ -1,3 +1,154 @@
 {
-  "appAbout": "Modifier <code>src/App.tsx</code> et sauvegarder pour tester le HMR"
+  "appName": "Struckly",
+  "login": {
+    "title": "Struckly - Se connecter",
+    "loginTitle": "Se connecter",
+    "no-account": "Besoin d'un compte? Créez-en un!",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "password": "Mot de passe"
+      },
+      "helpers": {
+        "password": "Mot de passe oublié ?"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      },
+      "submit": "Se connecter",
+      "errors": {
+        "invalid": {
+          "title": "E-mail ou mot de passe invalide",
+          "description": "Veuillez vérifier votre e-mail et votre mot de passe et réessayer."
+        }
+      }
+    }
+  },
+  "sign-up": {
+    "title": "Struckly - Inscription",
+    "signUpTitle": "Inscrivez-vous",
+    "terms": "En vous inscrivant, vous acceptez nos <0>Conditions générales d'utilisation</0> et <1>Politique de confidentialité</1>.",
+    "links": {
+      "login": "Déjà un compte ? Connectez-vous."
+    },
+    "form": {
+      "labels": {
+        "email": "E-mail",
+        "firstName": "Prénom",
+        "lastName": "Nom",
+        "password": "Mot de passe",
+        "confirm-password": "Confirmer le mot de passe",
+        "male": "Homme",
+        "female": "Femme",
+        "other": "Autre"
+      },
+      "placeholders": {
+        "email": "Example@compagny.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "••••••••",
+        "confirm-password": "••••••••"
+      },
+      "helpers": {
+        "password": "Le mot de passe doit comporter au moins 8 caractères"
+      },
+      "errors": {
+        "email-already-exists": {
+          "description": "Cet e-mail est déjà utilisé"
+        },
+        "passwords-do-not-match": {
+          "description": "Les mots de passe ne correspondent pas"
+        }
+      },
+      "submit": "S'inscrire"
+    }
+  },
+  "create-organization": {
+    "title": "Struckly - Votre organisation",
+    "subtitle": "Votre organisation",
+    "card-info": {
+      "title": "Booster la performance de votre entreprise!",
+      "list": {
+        "item-1": "Devis et facture en quelques clics",
+        "item-2": "Piloter les chantiers de A à Z",
+        "item-3": "Conçu par les pros du bâtiment"
+      }
+    },
+    "form": {
+      "labels": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "placeholders": {
+        "name": "Organisation",
+        "country": "Pays",
+        "size": "Taille de l'organisation"
+      },
+      "submit": "Créer mon organisation",
+      "errors": {
+        "user-already-has-an-organization": {
+          "title": "Vous avez déjà une organisation",
+          "description": "Vous ne pouvez pas créer une organisation si vous avez déjà une organisation."
+        }
+      }
+    }
+  },
+  "reset-password": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "reset-password-title": "Votre e-mail",
+    "reset-password-subtitle": "Entrez votre e-mail pour réinitialiser votre mot de passe.",
+    "back-to-login": "Retour à la connexion",
+    "form": {
+      "submit": "Envoyer",
+      "success": {
+        "text": "Si un compte correspondant existe, un e-mail de réinitialisation de mot de passe vous sera envoyé."
+      },
+      "placeholders": {
+        "email": "Example@compagny.com"
+      }
+    }
+  },
+  "reset-password-confirm": {
+    "title": "Struckly - Réinitialiser votre mot de passe",
+    "formTitle": "Mot de passe",
+    "formSubtitle": "Générer un mot de passe pour accéder à votre compte.",
+    "back-to-login": "Retour à la connexion",
+    "form": {
+      "submit": "Continuer",
+      "success": {
+        "title": "Réinitialisation du mot de passe",
+        "description": "Votre mot de passe a été réinitialisé avec succès."
+      },
+      "errors": {
+        "too-small": "Le mot de passe doit comporter au moins 8 caractères",
+        "token-expired": "Le lien de réinitialisation du mot de passe a expiré"
+      },
+      "placeholders": {
+        "password": "••••••••"
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Struckly - Tableau de bord"
+  },
+  "common": {
+    "placeholders": {
+      "no-options": "Aucune option"
+    },
+    "errors": {
+      "unknown": {
+        "title": "Une erreur est survenue",
+        "description": "Veuillez réessayer plus tard."
+      }
+    }
+  }
 }
