@@ -22,7 +22,7 @@ export function CreateOrganizationPage() {
   return (
     <>
       <title>{t('create-organization.title')}</title>
-      <div className="flex h-screen flex-col items-center justify-center gap-8">
+      <div className="bg-grey-100 flex h-screen flex-col items-center justify-center gap-8">
         <Typography tag={'h1'}>{t('appName')}</Typography>
         <Card className="h-[600px]">
           <div className="flex flex-1 items-center justify-start gap-4">
