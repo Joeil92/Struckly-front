@@ -140,6 +140,10 @@
   "dashboard": {
     "title": "Struckly - Dashboard"
   },
+  "sidebar": {
+    "organization-members": "{{count}} member",
+    "organization-members-plural": "{{count}} members"
+  },
   "common": {
     "placeholders": {
       "no-options": "No options"

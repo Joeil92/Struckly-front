@@ -5,4 +5,5 @@ export const pathKeys = {
   signUp: '/signup',
   resetPassword: '/reset-password',
   resetPasswordConfirm: '/reset-password/confirm',
+  organization: '/organization',
 }
