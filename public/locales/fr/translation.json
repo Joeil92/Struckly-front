@@ -142,7 +142,10 @@
   },
   "sidebar": {
     "organization-members": "{{count}} membre",
-    "organization-members-plural": "{{count}} membres"
+    "organization-members-plural": "{{count}} membres",
+    "menu": {
+      "dashboard": "Tableau de bord"
+    }
   },
   "common": {
     "placeholders": {
