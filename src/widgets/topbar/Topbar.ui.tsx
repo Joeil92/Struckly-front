@@ -1,4 +1,4 @@
-import { Bell, LogOut } from 'lucide-react'
+import { Bell } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import {
   Dropdown,
@@ -11,6 +11,7 @@ import { useAuth } from '../../entities/session/session.lib'
 import { Avatar } from '../../shared/ui/avatar/Avatar'
 import { SearchBar } from '../../shared/ui/search-bar'
 import { ToggleSidebar } from '../../features/sidebar/toggle-sidebar/Toggle-sidebar.ui'
+import { Logout } from '../../features/session/logout/Logout.ui'
 
 export function Topbar() {
   return <BaseTopbar />
@@ -50,10 +51,7 @@ function BaseTopbar() {
           </DropdownTrigger>
           <DropdownContent>
             <DropdownDivider />
-            <DropdownItem className="text-danger-500">
-              <LogOut className="h-4 w-4" />
-              {t('topbar.profile.logout')}
-            </DropdownItem>
+            <Logout />
           </DropdownContent>
         </Dropdown>
       </div>
