@@ -147,6 +147,14 @@
       "dashboard": "Tableau de bord"
     }
   },
+  "topbar": {
+    "notifications": {
+      "no-notifications": "Aucune notification"
+    },
+    "profile": {
+      "logout": "Se déconnecter"
+    }
+  },
   "common": {
     "placeholders": {
       "no-options": "Aucune option"

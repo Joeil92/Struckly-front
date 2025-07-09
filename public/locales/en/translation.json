@@ -147,6 +147,14 @@
       "dashboard": "Dashboard"
     }
   },
+  "topbar": {
+    "notifications": {
+      "no-notifications": "No notifications"
+    },
+    "profile": {
+      "logout": "Logout"
+    }
+  },
   "common": {
     "placeholders": {
       "no-options": "No options"
