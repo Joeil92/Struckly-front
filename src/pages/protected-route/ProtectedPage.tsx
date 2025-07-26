@@ -14,7 +14,7 @@ export function ProtectedPage() {
   return (
     <main className="flex h-screen flex-row">
       <Sidebar />
-      <main className="mx-8 my-4 w-full xl:mx-32">
+      <main className="mx-8 my-4 flex w-full flex-col gap-8 xl:mx-32">
         <Topbar />
         <Outlet />
       </main>

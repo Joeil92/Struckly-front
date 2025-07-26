@@ -141,7 +141,13 @@
     "title": "Struckly - Tableau de bord"
   },
   "organization": {
-    "title": "Struckly - Organisation"
+    "title": "Struckly - Organisation",
+    "subtitle": "Mon organisation",
+    "tabs": {
+      "organization": "Général",
+      "members": "Membres",
+      "roles": "Rôles"
+    }
   },
   "sidebar": {
     "organization-members": "{{count}} membre",

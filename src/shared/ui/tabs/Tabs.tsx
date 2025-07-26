@@ -18,7 +18,7 @@ function TabsList({
   DetailedHTMLProps<HTMLAttributes<HTMLUListElement>, HTMLUListElement>
 >) {
   return (
-    <ul className={clsx('flex items-center', className)} {...props}>
+    <ul className={clsx('bg-grey-100 flex items-center', className)} {...props}>
       {children}
     </ul>
   )
@@ -40,7 +40,7 @@ function TabsTrigger({
     <li
       onClick={() => setValue(value)}
       className={clsx(
-        'bg-grey-100 hover:text-primary-500 cursor-pointer border border-transparent px-8 py-2 transition-colors duration-200 ease-in-out',
+        'hover:text-primary-500 cursor-pointer border border-transparent px-8 py-2 transition-colors duration-200 ease-in-out',
         value === defaultValue
           ? 'text-primary-500 border-b-primary-500'
           : 'text-grey-800',
