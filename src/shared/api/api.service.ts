@@ -27,7 +27,7 @@ export function loginUser(
 
 export function signUp(signUpDto: SignUpDto, config?: AxiosRequestConfig) {
   const data = signUpDtoSchema.parse(signUpDto)
-  return api.post('/users', data, config)
+  return api.post('/users/register', data, config)
 }
 
 export function refreshUser(
@@ -59,7 +59,7 @@ export function createOrganization(
   config?: AxiosRequestConfig
 ) {
   const data = organizationDtoSchema.parse(organizationDto)
-  return api.post('/organizations', data, config)
+  return api.post('/organizations/register', data, config)
 }
 
 export function getOrganizationByMe(config?: AxiosRequestConfig) {
