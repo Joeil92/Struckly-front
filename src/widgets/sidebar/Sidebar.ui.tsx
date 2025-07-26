@@ -8,7 +8,7 @@ import { Typography } from '../../shared/ui/typography'
 import { Image, Users } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { Separator } from '../../shared/ui/separator'
-import { menuList } from './Sidebar.lib'
+import { menuList } from './sidebar.lib'
 import clsx from 'clsx'
 import { useSidebar } from '../../features/sidebar/sidebar.lib'
 import { Menu } from './sidebar.types'
@@ -58,18 +58,26 @@ function BaseSidebar({ isOpen }: { isOpen: boolean }) {
         )}
         onClick={onClickOrganization}
       >
-        {data.logoUrl ? (
-          <img src={data.logoUrl} alt="logo" className="h-10 w-10 rounded-sm" />
-        ) : (
-          <Image className="bg-grey-200 text-grey-500 h-10 w-10 rounded-sm p-2" />
-        )}
+        <div>
+          {data.logoUrl ? (
+            <img
+              src={data.logoUrl}
+              alt="logo"
+              className="h-10 w-10 rounded-sm"
+            />
+          ) : (
+            <Image className="bg-grey-200 text-grey-500 h-10 w-10 rounded-sm p-2" />
+          )}
+        </div>
         {isOpen ? (
           <div className="overflow-hidden">
             <Typography className="truncate font-medium">
               {data.name}
             </Typography>
             <div className="text-grey-800 flex items-center gap-2">
-              <Users className="h-3 w-3" />
+              <span>
+                <Users className="h-3 w-3" />
+              </span>
               <Typography tag={'small'} className="whitespace-nowrap">
                 {t(
                   data.membersCount <= 1
@@ -119,7 +127,7 @@ function MenuItem({ item, isOpen }: { item: Menu; isOpen: boolean }) {
                 : 'text-grey-500 hover:bg-primary-100 hover:text-primary-400'
             )}
           >
-            {item.icon}
+            <span>{item.icon}</span>
             <Typography
               tag={'small'}
               className={clsx(
@@ -137,13 +145,13 @@ function MenuItem({ item, isOpen }: { item: Menu; isOpen: boolean }) {
             <Link to={item.href}>
               <div
                 className={clsx(
-                  'flex items-center gap-4 rounded-sm p-2 transition-colors duration-200 ease-in-out',
+                  'flex justify-center gap-4 rounded-sm p-2 transition-colors duration-200 ease-in-out',
                   item.active
                     ? 'text-primary-400 bg-primary-100'
                     : 'text-grey-500 hover:bg-primary-100 hover:text-primary-400'
                 )}
               >
-                {item.icon}
+                <span>{item.icon}</span>
                 <Typography
                   tag={'small'}
                   className={clsx(
