@@ -7,6 +7,7 @@ import { ResetPasswordPage } from '../pages/reset-password'
 import { Dashboard } from '../pages/dashboard'
 import { SignUpPage } from '../pages/sign-up/Sign-up-page'
 import { CreateOrganizationPage } from '../pages/create-organization/Create-organization-page'
+import { Organization } from '../pages/organization/Organization'
 
 export function BoostrapedRouter() {
   return (
@@ -24,7 +25,8 @@ export function BoostrapedRouter() {
           element={<ResetPasswordConfirmPage />}
         />
         <Route path={pathKeys.dashboard} element={<ProtectedPage />}>
-          <Route path={pathKeys.dashboard} element={<Dashboard />} />
+          <Route element={<Dashboard />} index />
+          <Route path={pathKeys.organization} element={<Organization />} />
         </Route>
       </Routes>
     </BrowserRouter>

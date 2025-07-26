@@ -12,6 +12,8 @@ import { Avatar } from '../../shared/ui/avatar/Avatar'
 import { SearchBar } from '../../shared/ui/search-bar'
 import { ToggleSidebar } from '../../features/sidebar/toggle-sidebar/Toggle-sidebar.ui'
 import { Logout } from '../../features/session/logout/Logout.ui'
+import { Link } from 'react-router'
+import { pathKeys } from '../../shared/consts/router'
 
 export function Topbar() {
   return <BaseTopbar />
@@ -50,6 +52,11 @@ function BaseTopbar() {
             />
           </DropdownTrigger>
           <DropdownContent>
+            <DropdownItem>
+              <Link to={pathKeys.dashboard + '/' + pathKeys.organization}>
+                {t('topbar.profile.my-organization')}
+              </Link>
+            </DropdownItem>
             <DropdownDivider />
             <Logout />
           </DropdownContent>

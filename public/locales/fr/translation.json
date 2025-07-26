@@ -140,6 +140,9 @@
   "dashboard": {
     "title": "Struckly - Tableau de bord"
   },
+  "organization": {
+    "title": "Struckly - Organisation"
+  },
   "sidebar": {
     "organization-members": "{{count}} membre",
     "organization-members-plural": "{{count}} membres",
@@ -152,6 +155,7 @@
       "no-notifications": "Aucune notification"
     },
     "profile": {
+      "my-organization": "Mon organisation",
       "logout": "Se déconnecter"
     }
   },
